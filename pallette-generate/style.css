@@ -1,0 +1,100 @@
+*{ 
+    padding : 0 ; 
+    margin : 0  ; 
+box-sizing : border-box
+}
+
+
+body {
+    display: flex ; 
+    font-family: sans-serif;
+    justify-content: center ; 
+    align-items : center ; 
+    min-height : 100vh ; 
+    padding: 2rem;
+    background: linear-gradient( to right  , rgb(138, 236, 237) , rgb(208, 222, 228))
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0 , 0 , 0 ,0.3);
+}
+
+.container .header {
+    border-bottom: 2.5px solid rgb(65, 10, 154);
+    margin: 0 auto 20px auto;
+    width: max-content;
+    padding: .5rem   ;
+}
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  
+}
+
+#generate-palette-btn {
+    border: none;
+     border-radius: 50px; 
+    color: white;
+    background: linear-gradient(to left  , rgb(72, 72, 144) , rgb(193, 140, 193));
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: translate 0.3s ease;
+  
+}
+
+.color-palette {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
+     margin: 10px auto;
+     
+}
+
+.color-card {
+   border-radius: 20px;
+   background-color: white;
+   width: 100px ;
+   height: 120px;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+   transition: all 0.3s ease;
+}
+
+
+
+.color  {
+    height: 70%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.color-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    font-size: .8rem;
+    padding:7px;
+    font-weight: 600;
+    margin-bottom:10px;
+    gap: 3px;
+    
+}
+
+
+
+.copy-btn {
+    cursor: pointer;
+    color: #666;
+}
+.color-card:hover  , #generate-palette-btn:hover{
+    translate: 0 -5px;
+}
